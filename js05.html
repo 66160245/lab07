@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ตย 5</title>
+    <style>
+        .highlight {
+            background-color: rgb(255, 23, 23);
+        }
+    </style>
+</head>
+<body>
+    <h3>การจัดการ DOM</h3>
+    <p id="text">นี่คือข้อความตัวอย่าง</p>
+    <button onclick="changeText()">เปลี่ยนข้อความ</button>
+    <button onclick="toggleHighlight()">เน้นข้อความ</button>
+
+<script>
+    function changeText() {
+        document.getElementById("text").textContent = "ข้อความถูกเปลี่ยนแล้ว!!!!!";
+    }
+
+    function toggleHighlight() {
+        let text = document.getElementById("text");
+        text.classList.toggle("highlight");
+    }
+</script>
+</body>
+</html>
